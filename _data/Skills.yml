@@ -2,15 +2,19 @@ subject: Technical Proficiencies
 listing-order: 4
 icon: "/assets/img/screwdriver-wrench.svg"
 contents:
-  - title: Technical Proficiencies
+  - title: Software Development Lifecycle
     description: 
-    - "Software Development Lifecycle: Requirements Management, Software QA, Training and User Adoption, Production Support"
-    - "Microsoft 365: Word, Excel, PowerPoint, Outlook, Visio, Project, Publisher, Teams, Viva, OneDrive, SharePoint, Power Platform, Azure"
-    
-  - title: Professional Skills
+    - Requirements Management, Software QA, Training and User Adoption, Production Support
+  - title: Microsoft 365
     description:
-    - "Management and Leadership: Team Management, Stakeholder Management, Customer Success, Presentation, Communication, Collaboration"
-      
+    - Word, Excel, PowerPoint, Outlook, Visio, Project, Publisher, Teams, Viva, OneDrive, SharePoint, Power Platform, Azure
+  - title: Apple
+    description:
+    - iOS, iPadOS, macOS, iWork (Pages, Numbers, Keynote)
+ - title: Project & Task Management
+    description:
+    - monday.com, Atlassian, Asana, Trello, Miro, Airtable
+     
   - title: Frameworks
     description: "
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg)
