@@ -2,17 +2,25 @@ subject: Education
 listing-order: 3
 icon: "/assets/img/graduation-cap.svg"
 contents:
-  - title: Farvard University, PhD in Computer Science
+  - title: Swiss School of Business and Management
     description:
-      - Design of a method to build a probabilistic generative model
-      - Development of model calibration algorithm for cross-domain few-shot learning
-    date: Mar. 2019 - Aug. 2023
-  - title: Stanfort University, MA in Computer Science
+      - Doctorate in Business Administration
+      - "Dissertation Topic: Social media marketing strategies in the specialty coffee sector"
+    date: Dec 2022 - Dec 2025
+  - title: Escuela de Negocios Europea en Barcelona
     description:
-      - Development of deep learning algorithms for automatically tracking the facial expressions
-      - Optimizing parameter efficient fine tuning for fairness in medical image analysis
-    grade: "**GPA**: `4.1/4.3`"
-    date: Mar. 2014 - Feb. 2016
-  - title: Kambridge University, BA in Electronic Engineering
-    grade: "**GPA**: `3.9/4.3`"
-    date: Mar. 2010 - Feb. 2014
+      - MA in Business and Corporate Communication
+    date: Jun 2024 - May 2025
+  - title: Leaders Excellence at Harvard Square
+    description:
+      - mini MBA
+    date: May 2024 - Nov 2024
+  - title: UCLA
+    description:
+      - Technical Management Program
+    date: Sep 2017
+      - title: UC Berkeley
+    description:
+      - BA in Linguistics; Minor in French Language Studies
+      - Cal Scholarship and Wheeler Scholarship Recipient
+    date: Aug 2001 - Dec 2003
