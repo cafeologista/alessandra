@@ -1,10 +1,13 @@
-subject: Technical Proficiencies
+subject: Skills
 listing-order: 2
 icon: "/assets/img/graduation-cap.svg"
 contents:
-  - title: Software Development Lifecycle
+  - title: Technical Proficiencies
     description:
-      - Requirements Management, Software QA, Training and User Adoption, Production Support
+      - "SDLC: Requirements Management, Software QA, Training and User Adoption, Production Support"
+      - "SDLC: Requirements Management, Software QA, Training and User Adoption, Production Support"
+      - "SDLC: Requirements Management, Software QA, Training and User Adoption, Production Support"
+      - "SDLC: Requirements Management, Software QA, Training and User Adoption, Production Support"
   - title: Microsoft 365
     description:
       - Word, Excel, PowerPoint, Outlook, Visio, Project, Publisher, Teams, Viva, OneDrive, SharePoint, Power Platform, Azure
