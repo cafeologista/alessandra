@@ -2,8 +2,14 @@ subject: Skills
 listing-order: 4
 icon: "/assets/img/screwdriver-wrench.svg"
 contents:
-  - title: Programming Languages
-    description: "
+  - title: Technical Proficiencies
+    description: 
+    "* Software Development Lifecycle: Requirements Management, Software QA, Training and User Adoption, Production Support
+    "* Microsoft 365: Word, Excel, PowerPoint, Outlook, Visio, Project, Publisher, Teams, Viva, OneDrive, SharePoint, Power Platform, Azure
+    
+  - title: Professional Skills
+    description:
+    "* Management and Leadership: Team Management, Stakeholder Management, Customer Success, Presentation, Communication, Collaboration
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg)
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg)
       ![devicon](https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg)
