@@ -4,8 +4,9 @@ icon: "/assets/img/briefcase.svg"
 contents:
   - title: 17miles coffee roasters
     role: Product Manager
-  - description: As the leader in executing product strategies and refining our coffee roasting portfolio, I collaborate closely with the master roaster to maintain freshness
-standards and uphold our brand’s vision. Through studying consumer preferences and local competitor offerings, I identify opportunities for product differentiation within the specialty coffee community. Continuously seeking improvement, I gather feedback from customers and market insights to enhance the quality of our coffee offerings, ensuring consistency and excellence across all products.
+  - description:
+  "As the leader in executing product strategies and refining our coffee roasting portfolio, I collaborate closely with the master roaster to maintain freshness
+standards and uphold our brand’s vision. Through studying consumer preferences and local competitor offerings, I identify opportunities for product differentiation within the specialty coffee community. Continuously seeking improvement, I gather feedback from customers and market insights to enhance the quality of our coffee offerings, ensuring consistency and excellence across all products."
     date: Sep 2022 - Present
   - title: Claims Letters
     role: Senior Technical Program Manager
