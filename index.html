@@ -13,28 +13,35 @@
 <body>
   <header class="site-header">
     <div class="maxw">
-      <nav class="nav">
-        <a class="logo" href="#">AGL</a>
-        <div class="nav-links">
-          <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#entrepreneurship">Entrepreneurship</a>
-          <a href="#certs-skills">Certs & Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#research">Research</a>
-          <a href="#contact">Contact</a>
-        </div>
+      <nav class="nav" aria-label="Site">
+        <a class="logo" href="#">AGdL</a>
       </nav>
 
-      <section class="hero">
+      <!-- Hamburger + dropdown -->
+      <div class="hamburger" aria-live="polite">
+        <button id="menuBtn" aria-expanded="false" aria-controls="menuPanel" aria-label="Open menu">
+          <!-- icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18"/>
+          </svg>
+        </button>
+        <div id="menuPanel" class="menu-panel" role="menu" aria-hidden="true">
+          <a href="#about" role="menuitem">About</a>
+          <a href="#experience" role="menuitem">Experience</a>
+          <a href="#entrepreneurship" role="menuitem">Entrepreneurship</a>
+          <a href="#certs-skills" role="menuitem">Certifications & Skills</a>
+          <a href="#projects" role="menuitem">Featured Projects</a>
+          <a href="#education" role="menuitem">Education</a>
+          <a href="#research" role="menuitem">Current Doctoral Research</a>
+          <a href="#contact" role="menuitem">Contact</a>
+        </div>
+      </div>
+
+      <section class="hero" id="top">
         <div class="hero-text">
           <h1>Driving Innovation at the Intersection of AI, Continuous Improvement, and Business Leadership</h1>
           <p>Enterprise Applications leader specializing in digital transformation in the Property &amp; Casualty insurance sector. I combine leadership strategy, process improvement, and technology adoption to deliver scalable, measurable solutions.</p>
-          <div class="cta">
-            <a class="btn" href="#projects">See Featured Projects</a>
-            <a class="btn-secondary" href="#about">Learn More</a>
-          </div>
+          <!-- CTA links removed as requested -->
         </div>
       </section>
     </div>
@@ -42,12 +49,12 @@
 
   <main>
 
-    <!-- 1) ABOUT: single column -->
+    <!-- ABOUT: single column -->
     <section id="about" class="section one-col">
       <div class="maxw">
         <div class="content">
           <h2>About Me</h2>
-          <p>Enterprise Applications Manager and consultant specializing in digital transformation for the Property &amp; Casualty insurance industry. I combine leadership strategy, process improvement, and technology adoption to design scalable, measurable solutions that deliver business value.</p>
+          <p>I’m Alessandra Gutierrez de Leon, an Enterprise Applications Manager and consultant specializing in digital transformation for the Property &amp; Casualty insurance industry. I combine leadership strategy, process improvement, and technology adoption to design scalable, measurable solutions that deliver business value.</p>
           <p>Over my career, I’ve worn many hats — Business Analyst, Project Manager, and Testing Analyst — and advanced to leading and overseeing these functions. This blend of hands-on expertise and leadership experience allows me to bridge the gap between strategy and execution, ensuring that solutions are both innovative and implementable.</p>
           <p>With more than a decade of experience in SharePoint and Microsoft 365 solution architecture, process improvement, and cross-functional team leadership, I’ve delivered projects spanning enterprise migrations, metadata-driven content governance, process automation with Power Platform, and dashboard-style collaboration hubs that empower teams to work smarter.</p>
           <p>Outside of corporate life, I’m an entrepreneur at heart. I founded cafeoLogix, providing Microsoft 365 consulting and web design for small businesses and nonprofits, and 17miles coffee roasters, a specialty coffee venture inspired by quality, sustainability, and community connection.</p>
@@ -64,7 +71,7 @@
       </div>
     </section>
 
-    <!-- 2) EXPERIENCE -->
+    <!-- EXPERIENCE -->
     <section id="experience" class="section alt">
       <div class="maxw">
         <h2>Professional Experience</h2>
@@ -98,20 +105,20 @@
       </div>
     </section>
 
-    <!-- 3) ENTREPRENEURSHIP: single column -->
+    <!-- ENTREPRENEURSHIP: single column -->
     <section id="entrepreneurship" class="section one-col">
       <div class="maxw">
         <div class="content">
           <h2>Entrepreneurship</h2>
           <h3>Founder – cafeoLogix</h3>
           <p>Microsoft 365 consulting, SharePoint solutions, and web design for small businesses and nonprofits, including training, workflow automation, and metadata-driven document management.</p>
-          <h3>Co-founder – 17miles coffee roasters</h3>
+          <h3>Founder – 17miles coffee roasters</h3>
           <p>Specialty coffee roasting with a focus on quality, sustainability, and community; built brand identity and digital engagement.</p>
         </div>
       </div>
     </section>
 
-    <!-- 4) CERTIFICATIONS + SKILLS: shared, two columns -->
+    <!-- CERTS + SKILLS (two columns) -->
     <section id="certs-skills" class="section">
       <div class="maxw split-2">
         <aside class="card">
@@ -138,7 +145,7 @@
       </div>
     </section>
 
-    <!-- 5) FEATURED PROJECTS -->
+    <!-- FEATURED PROJECTS -->
     <section id="projects" class="section alt">
       <div class="maxw">
         <h2>Featured Projects</h2>
@@ -168,7 +175,7 @@
       </div>
     </section>
 
-    <!-- 6) EDUCATION -->
+    <!-- EDUCATION -->
     <section id="education" class="section one-col">
       <div class="maxw">
         <div class="content">
@@ -177,7 +184,7 @@
             <h3>Global Doctor of Business Administration (DBA) <span class="tag">In progress</span></h3>
             <ul>
               <li>Swiss School of Business and Management — Geneva, Switzerland</li>
-              <li>Dissertation in progress</li>
+              <li>Dissertation in progress; see <a href="#research">Current Doctoral Research</a></li>
             </ul>
           </article>
 
@@ -206,8 +213,8 @@
       </div>
     </section>
 
-    <!-- 7) CURRENT DOCTORAL RESEARCH -->
-    <section id="research" class="section">
+    <!-- CURRENT DOCTORAL RESEARCH (shaded) -->
+    <section id="research" class="section alt">
       <div class="maxw one-col">
         <div class="content">
           <h2>Current Doctoral Research</h2>
@@ -215,13 +222,12 @@
           <p><strong>Overview:</strong> As part of my doctoral program at the Swiss School of Business and Management, I am conducting original research on how U.S.-based Property &amp; Casualty (P&amp;C) insurance companies integrate Artificial Intelligence (AI) into their operations while applying Kaizen continuous improvement principles.</p>
           <p>This study examines the role of leadership strategy, organizational culture, and change management in successfully embedding AI into processes to enhance operational excellence. It bridges academic insight with practical application, informed by my professional experience leading enterprise technology transformations.</p>
           <p><strong>Why It Matters:</strong> The findings aim to offer a framework that not only benefits insurance companies but also serves as a model for other industries exploring AI adoption within a continuous improvement context.</p>
-          <p><strong>Learn More:</strong> To learn more, participate, or view updates, visit my research page:<br>
-            <a href="https://cafeologista.github.io/research/" target="_blank" rel="noopener">Visit my Research Study site →</a></p>
+          <p><strong>Learn More:</strong> To learn more, participate, or view updates, <a href="https://cafeologista.github.io/research/" target="_blank" rel="noopener">visit my research page</a>.</p>
         </div>
       </div>
     </section>
 
-    <!-- 8) CONTACT -->
+    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="maxw">
         <h2>Contact</h2>
@@ -238,6 +244,31 @@
   </footer>
 
   <script>
+    // Toggle hamburger menu
+    const btn = document.getElementById('menuBtn');
+    const panel = document.getElementById('menuPanel');
+
+    function closeMenu(){
+      panel.classList.remove('open');
+      panel.setAttribute('aria-hidden','true');
+      btn.setAttribute('aria-expanded','false');
+    }
+    btn.addEventListener('click', () => {
+      const open = panel.classList.toggle('open');
+      panel.setAttribute('aria-hidden', String(!open));
+      btn.setAttribute('aria-expanded', String(open));
+    });
+    // Close when clicking a link
+    panel.querySelectorAll('a').forEach(a=>{
+      a.addEventListener('click', closeMenu);
+    });
+    // Close on scroll start (optional)
+    let scrollTimer;
+    window.addEventListener('scroll', ()=> {
+      clearTimeout(scrollTimer);
+      closeMenu();
+    });
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
