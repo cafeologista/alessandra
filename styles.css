@@ -11,7 +11,7 @@
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6; scroll-behavior:smooth;}
 
 .maxw{max-width:1080px;margin:0 auto;padding:0 20px}
 .section{padding:64px 0}
@@ -23,54 +23,66 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 }
 .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .logo{color:#fff;font-weight:800;letter-spacing:1px;text-decoration:none}
-.nav a{color:#fff; opacity:0.95; text-decoration:none}
-.nav a:hover{opacity:1}
-.nav-links{display:flex;gap:18px;flex-wrap:wrap}
 
-.hero{display:grid;grid-template-columns:1.2fr 0.8fr;gap:32px;align-items:center;padding:36px 0 0 0}
+/* HAMBURGER */
+.hamburger{
+  position:fixed; /* follows scroll */
+  top:16px;
+  right:16px;
+  z-index:1000;
+}
+.hamburger button{
+  appearance:none; border:0; background:#ffffff; color:var(--brand);
+  width:44px; height:44px; border-radius:12px;
+  display:grid; place-items:center; cursor:pointer;
+  box-shadow:0 4px 16px rgba(0,0,0,.12);
+}
+.hamburger svg{width:22px;height:22px}
+.menu-panel{
+  position:fixed; top:70px; right:16px; z-index:999;
+  background:#fff; color:var(--ink); border:1px solid var(--border);
+  border-radius:12px; padding:10px; width:230px;
+  box-shadow:0 12px 28px rgba(0,0,0,.12);
+  display:none;
+}
+.menu-panel.open{display:block}
+.menu-panel a{
+  display:block; padding:10px 12px; border-radius:8px;
+  color:var(--ink); text-decoration:none;
+}
+.menu-panel a:hover{background:var(--surf)}
+
+/* HERO */
+.hero{display:grid;grid-template-columns:1fr;gap:32px;align-items:center;padding:36px 0 24px 0}
 .hero h1{color:#fff;line-height:1.15;margin:0 0 14px;font-size:clamp(28px,4vw,40px)}
 .hero p{color:#f3f6ff;max-width:64ch}
-.cta{display:flex;gap:12px;margin-top:16px}
-.btn{background:#fff;color:var(--brand);padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;border:2px solid #fff}
-.btn:hover{background:transparent;color:#fff}
-.btn-secondary{border:2px solid #fff;color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none}
-.btn-secondary:hover{background:#ffffff20}
 
+/* Cards, lists, grids */
 .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:18px}
 
-/* Utility layouts */
-.one-col{ /* single column section */ }
+.one-col{}
 .one-col .content{max-width:72ch}
 
 .split-2{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
-@media (max-width: 900px){
-  .split-2{grid-template-columns:1fr}
-}
+@media (max-width: 900px){ .split-2{grid-template-columns:1fr} }
 
-/* Lists, pills, items */
 .pill-list{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
 .pill-list li{background:var(--surf);border:1px solid var(--border);padding:6px 10px;border-radius:999px;font-size:14px}
-
 .check-list{margin:0;padding-left:18px}
+
 .item{padding:16px 0;border-top:1px solid var(--border)}
 .item:first-of-type{border-top:0}
 .tag{background:var(--brand);color:#fff;border-radius:8px;padding:2px 8px;font-size:12px;margin-left:8px}
 
-/* Cards grid (projects) */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
 .cards .card h3{margin-top:0}
-@media (max-width: 900px){
-  .hero{grid-template-columns:1fr}
-  .nav-links{display:none}
-  .cards{grid-template-columns:1fr}
-}
+@media (max-width: 900px){ .cards{grid-template-columns:1fr} }
 
 /* Footer */
 .site-footer{padding:24px 0;border-top:1px solid var(--border);background:#fff;color:var(--muted)}
 .site-footer p{margin:0;text-align:center}
 
-/* Minor typographic niceties */
+/* Headings spacing */
 h2{margin:0 0 16px}
 h3{margin:0 0 8px}
 ul{margin:0 0 8px}
-
