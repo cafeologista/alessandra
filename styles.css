@@ -1,13 +1,17 @@
 :root{
-  --bg:#ffffff;
-  --ink:#111827;
-  --muted:#6B7280;
-  --brand:#2155CD;
-  --brand-2:#79DAE8;
-  --surf:#F3F7FF;
-  --card:#ffffff;
-  --border:#E5E7EB;
+  --text:#111;      /* primary text (near-black) */
+  --muted:#666;     /* secondary text */
+  --bg:#fff;        /* page base */
+  --brand:#c1121f;  /* red accent */
+  --brand-dark:#8f0d17;
+  --ink:#000;       /* pure black when needed */
+  --rule:#e4e6ea;   /* light divider */
+  --link:var(--brand);
+  --header-bg:#000; /* header base under the image overlay */
 }
+a{ color:var(--link); }
+a:hover{ color:var(--brand-dark); text-decoration:underline; }
+
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
@@ -103,6 +107,23 @@ h2{margin:0 0 16px}
 h3{margin:0 0 8px}
 ul{margin:0 0 8px}
 
+/* Header background: BREW image */
+.site-header .head-bg {
+  position: absolute;
+  inset: 0;
+  background: url('assets/img/BREW.png') center/cover no-repeat;
+  filter: brightness(0.4); /* dark overlay for legibility */
+  transform: translateZ(0);
+}
+
+/* Profile headshot */
+.brand .profile {
+  max-height: 72px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: #fff;
+  object-fit: cover;
+}
 /* Header background: BREW image */
 .site-header .head-bg {
   position: absolute;
