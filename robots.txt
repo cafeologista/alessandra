@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alessandrabrews.solutions/sitemap.xml
