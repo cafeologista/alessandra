@@ -3,34 +3,71 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alessandra Gutierrez de Leon</title>
+  <title>Alessandra Gutierrez de Leon — Personal Site</title>
+  <!-- SEO basics -->
+  <meta name="description" content="Technology Strategist specializing in digital transformation and continuous improvement. DBA candidate researching AI-enabled Kaizen in U.S. P&C insurance. Founder of cafeoLogix and 17miles coffee roasters." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://alessandrabrews.solutions/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Alessandra Gutierrez de Leon" />
+  <meta property="og:title" content="Driving Innovation at the Intersection of AI, Continuous Improvement, and Business Leadership" />
+  <meta property="og:description" content="Technology Strategist focusing on Microsoft 365 solutions, AI in process improvement, and Kaizen-driven transformation." />
+  <meta property="og:url" content="https://alessandrabrews.solutions/" />
+  <meta property="og:image" content="https://alessandrabrews.solutions/assets/img/profile_photo.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Driving Innovation at the Intersection of AI, Continuous Improvement, and Business Leadership" />
+  <meta name="twitter:description" content="Technology Strategist focusing on Microsoft 365 solutions, AI in process improvement, and Kaizen-driven transformation." />
+  <meta name="twitter:image" content="https://alessandrabrews.solutions/assets/img/profile_photo.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alessandra Gutierrez de Leon",
+    "url": "https://alessandrabrews.solutions/",
+    "image": "https://alessandrabrews.solutions/assets/img/profile_photo.jpg",
+    "jobTitle": "Technology Strategist & Consultant",
+    "sameAs": ["https://www.linkedin.com/in/gutidel"],
+    "worksFor": {"@type":"Organization","name":"cafeoLogix"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Alessandra Gutierrez de Leon",
+    "url": "https://alessandrabrews.solutions/",
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.google.com/search?q=site:alessandrabrews.solutions+{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     :root{
-      --bg:#121212; 
-      --panel:#181818; 
-      --text:#ffffff; 
-      --muted:#b0b0b0; 
-      --red:#D72638; 
-      --line:#2a2a2a;
-      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --bg:#121212; --panel:#181818; --text:#ffffff; --muted:#b0b0b0; --red:#D72638; --line:#2a2a2a; --shadow:0 10px 30px rgba(0,0,0,.35);
     }
     html{scroll-behavior:smooth}
     *{box-sizing:border-box}
-    body{
-      margin:0; background:var(--bg); color:var(--text);
-      font-family:"Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      line-height:1.6;
-    }
+    body{margin:0; background:var(--bg); color:var(--text); font-family:"Montserrat",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6;}
     a{color:var(--red); text-decoration:none}
     a:hover{text-decoration:underline}
 
     /* Header */
     .header{position:sticky; top:0; z-index:50; backdrop-filter:saturate(120%) blur(6px); background:rgba(18,18,18,.75); border-bottom:1px solid var(--line)}
     .nav{max-width:1100px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; justify-content:space-between}
-    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px}
+    .brand{display:flex; align-items:center; gap:10px; font-weight:700; letter-spacing:.3px; cursor:pointer}
     .brand__dot{display:inline-block; width:10px; height:10px; background:var(--red); border-radius:50%}
     .menu{display:flex; gap:24px}
     .menu a{color:var(--text); opacity:.9}
@@ -41,9 +78,9 @@
     section{padding:72px 20px}
     .container{max-width:1100px; margin:0 auto}
     .eyebrow{color:var(--muted); text-transform:uppercase; font-size:.8rem; letter-spacing:.16rem}
-    h1, h2, h3{line-height:1.25; margin:0 0 16px}
-    h1{font-size:clamp(28px, 5vw, 44px); font-weight:700}
-    h2{font-size:clamp(22px, 4vw, 28px); font-weight:700}
+    h1,h2,h3{line-height:1.25; margin:0 0 16px}
+    h1{font-size:clamp(28px,5vw,44px); font-weight:700}
+    h2{font-size:clamp(22px,4vw,28px); font-weight:700}
     p{margin:0 0 14px}
 
     /* Hero */
@@ -52,9 +89,7 @@
     .hero__title:after{content:""; position:absolute; left:0; bottom:0; width:120px; height:4px; background:var(--red); border-radius:2px}
     .hero__lede{color:#e9e9e9; font-weight:300}
     .hero__points{margin-top:12px; color:var(--muted)}
-    .avatar{
-      width:min(300px, 80%); aspect-ratio:1/1; border-radius:999px; object-fit:cover; border:3px solid var(--red); box-shadow:var(--shadow); justify-self:center
-    }
+    .avatar{width:min(300px,80%); aspect-ratio:1/1; border-radius:999px; object-fit:cover; border:3px solid var(--red); box-shadow:var(--shadow); justify-self:center}
 
     /* Panels */
     .panel{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px; box-shadow:var(--shadow)}
@@ -83,20 +118,28 @@
     .banner img{display:block; width:100%; height:auto}
 
     /* CTA button */
-    .btn{display:inline-block; margin-top:8px; border:1px solid var(--red); color:var(--text); padding:10px 14px; border-radius:10px; transition:.2s transform ease, .2s background-color ease}
+    .btn{display:inline-block; margin-top:8px; border:1px solid var(--red); color:var(--text); padding:10px 14px; border-radius:10px; transition:.2s transform ease,.2s background-color ease}
     .btn:hover{background:var(--red); transform:translateY(-1px)}
 
     /* Footer */
     footer{padding:40px 20px; border-top:1px solid var(--line); color:var(--muted)}
 
+    /* Back-to-top chevron */
+    .backtotop{position:fixed; bottom:30px; right:30px; width:44px; height:44px; background:var(--red); border:none; border-radius:50%; color:var(--text); font-size:22px; cursor:pointer; box-shadow:var(--shadow); display:flex; align-items:center; justify-content:center; opacity:0; transform:translateY(8px); transition:opacity .35s ease, transform .35s ease}
+    .backtotop.visible{opacity:1; transform:translateY(0)}
+
+    /* Reveal animation for headings */
+    .reveal{opacity:0; transform:translateY(8px); transition:opacity .45s ease, transform .45s ease}
+    .reveal.show{opacity:1; transform:none}
+
     /* Mobile */
-    @media (max-width: 900px){
+    @media(max-width:900px){
       .hero{grid-template-columns:1fr; text-align:center}
       .hero__title:after{left:50%; transform:translateX(-50%)}
       .menu{display:none}
       .hamburger{display:inline-grid; place-items:center}
       .menu.open{display:flex; position:absolute; top:60px; right:20px; flex-direction:column; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:10px 12px; width:max-content; box-shadow:var(--shadow)}
-      .grid.cols-2, .grid.cols-3, .skills{grid-template-columns:1fr}
+      .grid.cols-2,.grid.cols-3,.skills{grid-template-columns:1fr}
     }
   </style>
 </head>
@@ -104,7 +147,7 @@
   <!-- Header / Nav -->
   <header class="header">
     <nav class="nav">
-      <div class="brand"><span class="brand__dot"></span> Alessandra Gutierrez de Leon</div>
+      <div class="brand" onclick="window.scrollTo({top:0,behavior:'smooth'})"><span class="brand__dot"></span> Alessandra Gutierrez de Leon</div>
       <button class="hamburger" aria-label="Toggle navigation" onclick="document.querySelector('.menu').classList.toggle('open')">☰</button>
       <div class="menu" role="navigation">
         <a href="#about">About</a>
@@ -121,33 +164,31 @@
   <section class="container" id="home">
     <div class="hero">
       <div>
-        <div class="eyebrow">Digital Transformation • Continuous Improvement</div>
-        <h1 class="hero__title">Driving Innovation at the Intersection of Technology, Insurance, and Specialty Coffee</h1>
-        <p class="hero__points">Technology Strategist specializing in digital transformation and process improvement.</p>
-        <p class="hero__points">Founder of <b>cafeoLogix</b> and <b>17miles coffee roasters</b>.
-        <p class="hero__points">Doctoral Candidate (DBA) at the Swiss School of Business and Management, researching AI-enabled Kaizen in U.S. P&amp;C insurance.</p>
+        <div class="eyebrow">Digital Transformation * Continuous Improvement</div>
+        <h1 class="hero__title">Driving Innovation at the Intersection of AI, Continuous Improvement, and Business Leadership</h1>
+        <p class="hero__lede">Technology Strategist and Solutions Consultant specializing in digital transformation and continuous process improvement.</p>
+        <p class="hero__points">Founder of <b>cafeoLogix</b> and <b>17miles coffee roasters</b>. Doctoral Candidate (DBA) at the <b>Swiss School of Business and Management</b>, researching AI-enabled Kaizen in U.S. P&amp;C insurance.</p>
         <a class="btn" href="#contact">Let’s connect</a>
       </div>
-      <img class="avatar" src="assets/img/profile_photo.jpg" alt="Profile Photo of Alessandra Gutierrez de Leon" />
+      <img class="avatar" src="assets/img/profile_photo.jpg" alt="Portrait of Alessandra Gutierrez de Leon" />
     </div>
   </section>
 
   <!-- About -->
   <section id="about">
     <div class="container">
-      <h2>About Me</h2>
+      <h2 class="reveal">About Me</h2>
       <div class="panel">
-        <p>I’m <b>Alessandra Gutierrez de Leon</b>, an Enterprise Applications Manager and consultant specializing in digital transformation for the Property &amp; Casualty insurance industry. I combine leadership strategy, process improvement, and technology adoption to design scalable solutions that deliver measurable business value.</p>
+        <p>I’m <b>Alessandra Gutierrez de Leon</b>, a consultant and Technology Strategist specializing in digital transformation for the Property &amp; Casualty insurance industry. I combine leadership strategy, process improvement, and technology adoption to design scalable solutions that deliver measurable business value.</p>
         <p>Over my career, I’ve worn many hats — Business Analyst, Project Manager, and Testing Analyst — evolving into leadership roles that bridge strategy and execution. This balance of hands-on expertise and vision ensures that the solutions I design are not just innovative but implementable.</p>
         <p>With over a decade of experience in <b>Microsoft 365</b>, <b>SharePoint</b>, and <b>process improvement</b>, I’ve led projects across enterprise migrations, metadata governance, Power Platform automation, and data-driven collaboration hubs.</p>
         <p>Outside of corporate life, I’m an entrepreneur at heart — founder of <b>cafeoLogix</b>, offering Microsoft 365 consulting and web design for small businesses and nonprofits, and <b>17miles coffee roasters</b>, a venture inspired by quality, sustainability, and community.</p>
-        <p>Continuous learning drives me: I hold a Mini‑MBA from Harvard Square, a Technical Management Program Certificate from UCLA, and a BA in Linguistics from UC Berkeley. I’m also a <b>Certified Scrum Product Owner</b>, <b>Lean Six Sigma learner and practitioner</b>, and lifelong student of Kaizen and Total Quality Management.</p>
+        <p>Continuous learning drives me: I hold a Mini‑MBA from Harvard Square, a Technical Management Program Certificate from UCLA, and a BA in Linguistics from UC Berkeley. I’m also a <b>Certified Scrum Product Owner</b>, <b>Lean Six Sigma practitioner</b>, and lifelong student of Kaizen and Total Quality Management.</p>
         <p>I developed my <b>BREW Framework</b> — a practical approach to transformation:<br>
-        <b>B</b> = Blueprint (define goals, scope, &amp; strategy) • <b>R</b> = Requirements (gather and analyze needs) • <b>E</b> = Execution (develop, implement, &amp; test) • <b>W</b> = Win (deliver, support, &amp; ensure success).</p>
+        <b>B</b> = Blueprint <i>(define goals, scope, and strategy)</i> • <b>R</b> = Requirements <i>(gather and analyze needs)</i> • <b>E</b> = Execution <i>(develop, implement, and test)</i> • <b>W</b> = Win <i>(deliver, support, and ensure success)</i>.</p>
         <div class="banner">
           <img src="assets/img/BREW.png" alt="BREW framework banner" />
         </div>
-       <p>Whether guiding an enterprise through system integration or helping a nonprofit embrace digital transformation, BREW helps me align people, processes, and technology for lasting impact.</p>
       </div>
     </div>
   </section>
@@ -155,7 +196,7 @@
   <!-- Experience -->
   <section id="experience">
     <div class="container">
-      <h2>Professional Experience</h2>
+      <h2 class="reveal">Professional Experience</h2>
       <div class="xp">
         <div class="card">
           <div class="role"><b>Enterprise Applications Manager — HUB International</b> <span>(Current)</span></div>
@@ -196,7 +237,7 @@
   <!-- Skills -->
   <section id="skills">
     <div class="container">
-      <h2>Skills &amp; Focus Areas</h2>
+      <h2 class="reveal">Skills &amp; Focus Areas</h2>
       <div class="skills">
         <div class="skill"><b>AI in Business Process Improvement</b><br>Automation &amp; analytics to reimagine workflows in regulated industries</div>
         <div class="skill"><b>Continuous Improvement Frameworks</b><br>Kaizen, Lean Six Sigma, and operational excellence practices</div>
@@ -210,12 +251,12 @@
   <!-- Education & Certs -->
   <section id="education">
     <div class="container">
-      <h2>Education</h2>
+      <h2 class="reveal">Education</h2>
       <div class="panel grid cols-2">
         <div>
           <ul class="clean">
             <li><b>DBA, Global Doctor of Business Administration</b> — Swiss School of Business and Management</li>
-            <li><b>MA, Business &amp; Corporate Communication (English &amp; Spanish)</b> — Escuela de Negocios Europeo de Barcelona</li>
+            <li><b>MA, Business &amp; Corporate Communication (English &amp; Spanish)</b> — Escuela de Negocios Europea de Barcelona</li>
             <li><b>Mini‑MBA</b> — Leaders Excellence at Harvard Square</li>
             <li><b>BA, Linguistics; Minor in French</b> — UC Berkeley (Double Scholarship Recipient)</li>
             <li><b>Technical Management Program Certificate</b> — UCLA Henry Samueli School of Engineering</li>
@@ -237,13 +278,13 @@
   <!-- Research -->
   <section id="research">
     <div class="container">
-      <h2>Current Research</h2>
+      <h2 class="reveal">Current Research</h2>
       <div class="panel">
         <p><b>Title:</b><br>
         <i>AI Integration in Kaizen Continuous Improvement: Leadership Strategies for Operational Excellence in U.S. Property &amp; Casualty Insurance</i></p>
         <p><b>Overview:</b> As part of my DBA at the Swiss School of Business and Management, I’m studying how U.S. P&amp;C insurance companies integrate AI into operations while applying Kaizen principles. The research examines leadership strategy, organizational culture, and change management in embedding AI for operational excellence.</p>
         <p><b>Why It Matters:</b> The goal is a practical framework for insurers — and other regulated industries — adopting AI within a continuous improvement context.</p>
-        <a class="btn" href="https://cafeologista.github.io/dba-research/" aria-label="Visit the Research Study Site">Visit the Research Study Site →</a>
+        <a class="btn" href="https://alessandrabrews.solutions/research/" target="_blank" rel="noopener">Visit the Research Study Site →</a>
       </div>
     </div>
   </section>
@@ -251,24 +292,38 @@
   <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2>Contact</h2>
+      <h2 class="reveal">Contact</h2>
       <div class="panel grid cols-2">
         <div>
           <p>📧 <a href="mailto:alessandra@gutidel.com">alessandra@gutidel.com</a><br>
              🔗 <a href="https://linkedin.com/in/gutidel" target="_blank" rel="noopener">LinkedIn / gutidel</a></p>
         </div>
+        <div></div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">© <span id="y"></span> Alessandra Gutierrez de Leon</div>
-    <div class="container"> Caffeinated by GitHub</div>
   </footer>
 
+  <button class="backtotop" id="backtotop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">↑</button>
+
   <script>
-    // year
-    document.getElementById('y').textContent = new Date().getFullYear();
+    // footer year
+    document.getElementById('y').textContent=new Date().getFullYear();
+
+    // back-to-top reveal
+    const btt=document.getElementById('backtotop');
+    window.addEventListener('scroll',()=>{
+      if(window.scrollY>400){btt.classList.add('visible')} else {btt.classList.remove('visible')}
+    });
+
+    // heading reveal on scroll
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('show'); observer.unobserve(e.target);} });
+    }, {threshold:0.1});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   </script>
 </body>
 </html>
